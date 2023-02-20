@@ -7,3 +7,8 @@ hamburger.addEventListener('click', function(){
 closer.addEventListener('click', function(){
     menu.classList.remove('hamburger__menu-active');
 });
+const procent = document.querySelectorAll('.procent__item_mini-procent'),
+divider = document.querySelectorAll('.procent__divider');
+procent.forEach(function(item, i) {
+    divider[i].style.width = item.innerHTML;
+    });

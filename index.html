@@ -15,7 +15,7 @@
 <body>
 <header class="header">
     <div class="container">
-        <div class="submain_fz16">Меня зовут Евгений Гугнин
+        <div class="submain_fz16"><span>Меня зовут Евгений Гугнин</span>
             <div class="circle"></div>
         </div>
         <h1>Я web-разработчик <br> из города Харьков</h1>
@@ -47,8 +47,8 @@
             <nav>
                 <ul>
                     <li><a href="#me">ПРО МЕНЯ</a></li>
-                    <li><a href="#">МОЙ ОПЫТ</a></li>
-                    <li><a href="#">МОИ НАВЫКИ</a></li>
+                    <li><a href="#reason">МОЙ ОПЫТ</a></li>
+                    <li><a href="#skills">МОИ НАВЫКИ</a></li>
                     <li><a href="#">МОИ РАБОТЫ</a></li>
                     <li><a href="#">ПРАЙС-ЛИСТ</a></li>
                     <li><a href="#">КОНТАКТЫ</a></li>
@@ -74,9 +74,11 @@
 </header>
 <section id="me" class="aboutMe">
     <div class="about__container">
-        <img class="about__image" src="" alt="myPhoto">
+        <div class="about__image">
+            <img src="image/me.jpg" alt="myPhoto">
+        </div>
         <div class="about__descr">
-            <div class="submain_fz16"><div class="circle"></div>Про меня</div>
+            <div class="submain_fz16"><div class="circle"></div><span>Про меня</span></div>
             <div class="main_36px">Меня зовут Евгений</div>
             <div class="about__divider"></div>
             <div class="about__text">Я Евгений Гугнин Олегович, мне 18 лет. Общительный человек, с любым человеком пытаюсь найти общий язык.  С самого детства очень люблю работать с компьютером, узнавать что-нибудь новое. Проходил курсы по HTML, CSS, JS и библиотеки REACT. Из увлечений: люблю играть на гитаре и весело проводить время с людьми.</div>
@@ -103,6 +105,84 @@
         </div>
     </div>
 </section>
+<section id="reason" class="reason">
+    <div class="submain_fz16"><span>Опыт</span></div>
+    <div class="main_36px"><span>Мои преимущества</span></div>
+    <div class="about__divider"></div>
+    <div class="reason__container">
+        <div class="reason__column">
+            <div class="reason__lern reason__lern_main">Образование</div>
+            <div class="reason__lern__container">
+                <div class="image"><img src="image/icons/University.svg" alt="icon"></div>
+                <div class="reason__lern_title">Общее среднее образование</div>
+                <div class="reason__lern_subtitle">Г.Макеевка Школа №29 (2010-2021г)</div>
+            </div>
+            <div class="reason__lern__wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
+            
+            <div class="reason__lern__container">
+                <div class="image"><img src="image/icons/Courses.svg" alt="icon"></div>
+                <div class="reason__lern_title">Udemy</div>
+                <div class="reason__lern_subtitle">Курсы по Web-разработке </div>
+            </div>
+            <div class="reason__lern__wrapper">Прошел курсы по Web-разработке, а также JS и библиотеки React.</div>
+        </div>
+        <div class="reason__column">
+            <div class="reason__lern reason__lern_main">Опыт работы</div>
+            <div class="reason__lern__container">
+                <div class="image"><img src="image/icons/University.svg" alt="icon"></div>
+                <div class="reason__lern_title">Front-End Developer</div>
+                <div class="reason__lern_subtitle">(2022-2022г)</div>
+            </div>
+            <div class="reason__lern__wrapper">На данный момент в поисках первой работы/стажировки.</div>
+        </div>
+    </div>
+</section>
+<section id="skills" class="skills">
+    <div class="submain_fz16"><span>Навыки</span></div>
+    <div class="main_36px"><span>Что я использую в работе</span></div>
+    <div class="about__divider"></div>
+    <div class="skills__container">
+        <div class="skills__container-item"> <img src="image/icons/html5.svg" alt="skill"><span class="skills__container-item_upper">HTML5</span><span class="skills__container-item_lower">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</span></div>
+        <div class="skills__container-item">  <img src="image/icons/css3.svg" alt="skill"><span class="skills__container-item_upper">CSS3</span><span class="skills__container-item_lower">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</span></div>
+        <div class="skills__container-item">    <img src="image/icons/JS.svg" alt="skill"><span class="skills__container-item_upper">Java Script</span><span class="skills__container-item_lower">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</span></div>
+        <div class="skills__container-item"><img class="query" src="image/icons/Jquery.svg" alt="skill"><span class="skills__container-item_upper">Jquery</span><span class="skills__container-item_lower">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</span></div>
+        <div class="skills__container-item"> <img src="image/icons/React.svg" alt="skill"><span class="skills__container-item_upper">React</span><span class="skills__container-item_lower">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</span></div>
+    </div>
+</section>
+<div class="procent">
+    <div class="procent__container">
+        <div class="procent__item">
+            <div class="procent__item_mini-text"><span>Создание сайтов</span></div>
+            <div class="procent__item_mini-procent">100%</div>
+            <div class="procent__item_mini-divider"><span class="procent__divider"></span></div>
+        </div>
+        <div class="procent__item">
+            <div class="procent__item_mini-text"><span>Создание приложений</span></div>
+            <div class="procent__item_mini-procent">0.1%</div>
+            <div class="procent__item_mini-divider"><span class="procent__divider"></span></div>
+        </div>
+        <div class="procent__item">
+            <div class="procent__item_mini-text"><span>Работа с данными</span></div>
+            <div class="procent__item_mini-procent">75%</div>
+            <div class="procent__item_mini-divider"><span class="procent__divider"></span></div>
+        </div>
+        <div class="procent__item">
+            <div class="procent__item_mini-text"><span>Креативность</span></div>
+            <div class="procent__item_mini-procent">80%</div>
+            <div class="procent__item_mini-divider"><span class="procent__divider"></span></div>
+        </div>
+        <div class="procent__item">
+            <div class="procent__item_mini-text"><span>Создание дизайна</span></div>
+            <div class="procent__item_mini-procent">60%</div>
+            <div class="procent__item_mini-divider"><span class="procent__divider"></span></div>
+        </div>
+        <div class="procent__item">
+            <div class="procent__item_mini-text"><span>Soft skills</span></div>
+            <div class="procent__item_mini-procent">70%</div>
+            <div class="procent__item_mini-divider"><span class="procent__divider"></span></div>
+        </div>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="script/js.js"></script>
 </body>
