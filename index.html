@@ -20,7 +20,7 @@
         </div>
         <h1>Я web-разработчик <br> из города Харьков</h1>
         <div class="header_toogle">
-            <a href="#" class="btn btn-active">Портфолио</a>
+            <a href="#me" class="btn btn-active">Портфолио</a>
             <a href="#" class="btn btn-second">Про меня</a>
         </div>
     </div>
@@ -184,8 +184,8 @@
     </div>
 </div>
 <section id="works" class="works">
-    <div class="submain_fz16"><span>Навыки</span></div>
-    <div class="main_36px"><span>Что я использую в работе</span></div>
+    <div class="submain_fz16"><span>Портфолио</span></div>
+    <div class="main_36px"><span>Мои работы</span></div>
     <div class="about__divider"></div>
     <div class="works__container">
         <div class="works__item"><a href="#"><img src="image/works/uber.jpg" alt="works"></a></div>
@@ -197,8 +197,7 @@
     </div>
 </section>
 <div id="price" class="price">
-    <div class="submain_fz16"><span>Навыки</span></div>
-    <div class="main_36px"><span>Что я использую в работе</span></div>
+    <div class="submain_fz16"><span>Прайс-лист</span></div>
     <div class="about__divider"></div>
     <div class="price__container">
         <div class="price__item"><div class="price__title">Landing-page</div><div class="price__price">от 500 грн</div><div class="price__subtitle">Одностраничный сайт для презентации услуг/товаров/...</div></div>
@@ -231,11 +230,11 @@
                 </a>
             </div>
             <div class="footer__item_bot">Или оставьте ваши данные и я сам вам напишу:</div>
-            <form class="footer__form__container" action="">
-                <div class="form-item input"><input type="text"><div class="form-item-text">Ваше имя</div></div>
-                <div class="form-item input"><input type="text"><span class="form-item-text">Ваша почта</span></div>
-                <div class="form-item textarea"><textarea></textarea><span class="form-item-text">Ваше сообщение</span></div>
-                <div class="form-item"><button class="btn btn-active btn_bot">Отправить сообщение</button></div>
+            <form class="footer__form__container" action="#">
+                <div class="form-item input"><input required type="text" name="name" autocomplete="off"><div class="form-item-text">Ваше имя</div></div>
+                <div class="form-item input"><input required type="email" name="email" autocomplete="off"><span class="form-item-text">Ваша почта</span></div>
+                <div class="form-item textarea"><textarea required type="mtext" name="message" autocomplete="off"></textarea><span class="form-item-text">Ваше сообщение</span></div>
+                <div class="form-item"><button type="submit" class="btn btn-active btn_bot">Отправить сообщение</button></div>
             </form>
         </div>
     </div>

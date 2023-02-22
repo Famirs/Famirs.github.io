@@ -12,3 +12,17 @@ divider = document.querySelectorAll('.procent__divider');
 procent.forEach(function(item, i) {
     divider[i].style.width = item.innerHTML;
     });
+$(document).ready(function(){
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+});
