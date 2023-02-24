@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="header">
+<header id="up" class="header">
     <div class="container">
         <div class="submain_fz16 circle-item"><span>Меня зовут Евгений Гугнин</span></div>
         <h1>Я web-разработчик <br> из города Харьков</h1>
         <div class="header_toogle">
-            <a href="#me" class="btn btn-active">Портфолио</a>
-            <a href="#" class="btn btn-second">Про меня</a>
+            <a href="#works" class="btn btn-active">Портфолио</a>
+            <a href="#me" class="btn btn-second">Про меня</a>
         </div>
     </div>
     <aside class="header__social">
@@ -44,12 +44,12 @@
         <div class="hamburger__general">
             <nav>
                 <ul>
-                    <li><a href="#me">ПРО МЕНЯ</a></li>
-                    <li><a href="#reason">МОЙ ОПЫТ</a></li>
-                    <li><a href="#skills">МОИ НАВЫКИ</a></li>
-                    <li><a href="#works">МОИ РАБОТЫ</a></li>
-                    <li><a href="#price">ПРАЙС-ЛИСТ</a></li>
-                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                    <li><a class="linked" href="#me">ПРО МЕНЯ</a></li>
+                    <li><a class="linked" href="#reason">МОЙ ОПЫТ</a></li>
+                    <li><a class="linked" href="#skills">МОИ НАВЫКИ</a></li>
+                    <li><a class="linked" href="#works">МОИ РАБОТЫ</a></li>
+                    <li><a class="linked" href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <li><a class="linked" href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             <div class="hamburger__menu_close">
@@ -89,13 +89,13 @@
                 </div>
                 <div class="about__container_mini-item">
                     <div class="skill">Разработка приложений</div>
-                    <div class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="descr">Опыт работы в подобной сфере отсутствует</div>
                     <img src="image/icons/Mobile dev_icon.svg" alt="icon">
                     <div class="circle"></div>
                 </div>
                 <div class="about__container_mini-item">
                     <div class="skill">UI/UX Design</div>
-                    <div class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="descr">Опыт работы в подобной сфере отсутствует</div>
                     <img src="image/icons/Design.svg" alt="icon">
                     <div class="circle"></div>
                 </div>
@@ -115,8 +115,7 @@
                 <div class="reason__lern_title">Общее среднее образование</div>
                 <div class="reason__lern_subtitle">Г.Макеевка Школа №29 (2010-2021г)</div>
             </div>
-            <div class="reason__lern__wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
-            
+            <div class="reason__lern__wrapper">С 1 по 11 класс учился в г.Макеевка, школа №29, заканчивал школу в г.Харьков "Черкаськолозівський ліцей"</div>
             <div class="reason__lern__container">
                 <div class="image"><img src="image/icons/Courses.svg" alt="icon"></div>
                 <div class="reason__lern_title">Udemy</div>
@@ -232,11 +231,13 @@
                 <div class="form-item input"><input required type="text" name="name" autocomplete="off"><div class="form-item-text">Ваше имя</div></div>
                 <div class="form-item input"><input required type="email" name="email" autocomplete="off"><span class="form-item-text">Ваша почта</span></div>
                 <div class="form-item textarea"><textarea required type="mtext" name="message" autocomplete="off"></textarea><span class="form-item-text">Ваше сообщение</span></div>
-                <div class="form-item"><button type="submit" class="btn btn-active btn_bot">Отправить сообщение</button></div>
+                <div class="button_left"><button type="submit" class="btn btn-active btn_bot">Отправить сообщение</button></div>
+                <div class="policy"><input required type="checkbox"> Я согласен(а) с <a href="policy.html">политикой конфиденциальности</a></div>
             </form>
         </div>
     </div>
 </footer>
+<a href="#up" class="page_up"><img src="image/icons/up.png" alt="page_up"></a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="script/js.js"></script>
 </body>

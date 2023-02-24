@@ -9,7 +9,7 @@
 }
 
 .promo {
-    height: 800px;
+    height: 100%;
     background: url('../background/main_bg.png') center center/cover no-repeat;
     padding: 39px 0 62px 0;
 }
@@ -55,9 +55,9 @@
 h1 {
     margin-top: 53px;
 }
- h2.title {
+h2.title {
     margin-top: 30px;
- }
+}
 .promo .text_promo {
     margin-top: 23px;
     font-family: 'Roboto';
@@ -112,7 +112,6 @@ h1 {
 .waiting {
     height: 607px;
     background-color:#EFEFEF;
-    padding: 85px 400px 75px 400px;
 }
 .waiting_header {
     text-align: center;
@@ -145,11 +144,15 @@ h1 {
     height: 201px;
     display: inline-block;
     vertical-align: top;
+    margin: 0 20px;
     margin-top: 45px;
+}
+.img_item img{
+    width: 100%;
 }
 .images {
     display: flex;
-    justify-content: space-between; 
+    justify-content: center;
 }
 .waiting_text {
     font-family: 'Roboto';
@@ -177,8 +180,9 @@ h1 {
     color: #299CBD;
 }
 .optim_header, .optim_text {
-    margin-left: 785px;
-    padding-right: 385px;
+        margin-left: 45%;
+        padding-right: 20px;
+        max-width: 954px;
 }
 .optim_text {
     font-family: 'Roboto';
@@ -250,7 +254,7 @@ h1 {
     color: #EFEFEF;
     width: 200px;
     margin-top: 25px;
-   text-align: center;
+    text-align: center;
 }
 
 
@@ -290,7 +294,7 @@ h1 {
     padding-top: 73px;
 }
 .gift_text {
-    width: 1100px;
+    max-width: 1100px;
     min-height: 113px;
     text-align: center;
     margin: 0 auto;
@@ -368,4 +372,25 @@ footer {
     width: 240px;
     margin: 0 auto;
     font-family: 'Roboto';
+}
+.error{
+    height: 100vh;
+}
+.error_message{
+    display: none;
+    line-height: 82px;
+    font-size: 42px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 1399px) {
+    .all{
+        display: none;
+    }
+    .error_message{
+        display: block;
+    }
 }
