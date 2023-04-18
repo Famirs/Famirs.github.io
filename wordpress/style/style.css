@@ -375,9 +375,9 @@ footer {
 }
 .error{
     height: 100vh;
+    display: none;
 }
 .error_message{
-    display: none;
     line-height: 82px;
     font-size: 42px;
     position: absolute;
@@ -390,7 +390,7 @@ footer {
     .all{
         display: none;
     }
-    .error_message{
+    .error{
         display: block;
     }
 }
